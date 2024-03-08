@@ -12,13 +12,7 @@
 	</parent>
 	
 
-<distributionManagement>
-    <snapshotRepository>
-    <id>nexus-snapshots</id>
-    <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
-    </snapshotRepository>
-  </distributionManagement>
-
+ 
 
 	
 
@@ -88,18 +82,7 @@
                 </excludes>
             </configuration>
         </plugin>
-        <plugin>
-            <groupId>org.sonatype.plugins</groupId>
-            <artifactId>nexus-staging-maven-plugin</artifactId>
-            <version>1.6.3</version>
-            <extensions>true</extensions>
-            <configuration>
-                <serverId>nexus-releases</serverId>
-                <nexusUrl>http://localhost:8081/nexus/</nexusUrl>
-                <!-- update this to the correct id! -->
-                <stagingProfileId>1296f79efe04a4d0</stagingProfileId>
-            </configuration>
-        </plugin>
+         
     </plugins>
 </build>
 
