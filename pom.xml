@@ -86,6 +86,7 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+				  </configuration>
 					</plugin>
 			<plugin>
         <groupId>org.sonatype.plugins</groupId>
@@ -97,8 +98,9 @@
           <nexusUrl>http://localhost:8081/nexus/</nexusUrl>
           <!-- update this to the correct id! -->
           <stagingProfileId>1296f79efe04a4d0</stagingProfileId>
-        </configuration>
-      </plugin>
+		</plugin>
+       
+      
 
 			
 		</plugins>
